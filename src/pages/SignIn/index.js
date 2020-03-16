@@ -14,7 +14,7 @@ import {
   SignLinkText,
 } from './styles';
 
-export default function SignIn() {
+export default function SignIn({ navigation }) {
   return (
     <Background>
       <Container>
@@ -32,13 +32,13 @@ export default function SignIn() {
           <FormInput
             icon="lock-outline"
             secureTextEntry
-            placeholder="Digite seu e-mail"
+            placeholder="Digite sua senha"
           />
 
           <SubmitButton onPress={() => {}}>Acessar</SubmitButton>
         </Form>
 
-        <SignLink onPress={() => {}}>
+        <SignLink onPress={() => navigation.navigate('SignUp')}>
           <SignLinkText>Criar Conta Gratuita</SignLinkText>
         </SignLink>
       </Container>
