@@ -7,7 +7,7 @@ import SignUp from './pages/SignUp';
 
 const Stack = createStackNavigator();
 
-export default function createRouter() {
+export default function Routes() {
   return (
     <Stack.Navigator headerMode="none">
       <Stack.Screen name="SignIn" component={SignIn} />

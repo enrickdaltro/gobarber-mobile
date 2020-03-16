@@ -5,12 +5,12 @@ export const Container = styled.View`
   height: 45px;
   background: rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-
+  margin-bottom: 10px;
   flex-direction: row;
   align-items: center;
 `;
 
-export const Tinput = styled.TextInput.attrs({
+export const TInput = styled.TextInput.attrs({
   placeholderTextColor: 'rgba(255,255,255, 0.8)',
 })`
   flex: 1;
